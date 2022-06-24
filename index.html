@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-title-wrapper">
+        <img src="./assets/logo.png" alt="">
+      </div>
+      <div class="tip">
+        <form class="tip__form" id="form">
+          <div class="tip__wrapper">
+            <label for="payout" class="tip__bill">Bill</label>
+            <div class="tip__icon-wrapper">
+              <img src="./assets/dollar.png" alt="" class="tip__dollar">
+              <input type="text" class="tip__payout" id="payout" />
+            </div>
+          </div>
+          <div class="tip__wrapper">
+            <label for="people">Number of People</label>
+            <div class="tip__icon-wrapper">
+              <img src="./assets/user.png" alt="" class="tip__user">
+              <input type="text" id="people" class="tip__people" />
+            </div>
+          </div>
+          <div class="tip__wrapper">
+            <span class="tip__select">Select Tip %</span>
+            <div class="tip__percentage-wrapper">
+              <button class="tip__percentage" id="five">5%</button>
+              <button class="tip__percentage" id="ten">10%</button>
+              <button class="tip__percentage" id="fifteen">15%</button>
+              <button class="tip__percentage" id="twenty-five">25%</button>
+              <button class="tip__percentage" id="fifty">50%</button>
+              <input
+                type="text"
+                placeholder="Custom"
+                class="tip__custom"
+                id="custom"
+              />
+            </div>
+          </div>
+
+          <div class="tip__wrapper-footer">
+            <div class="tip__amount-total">
+              <div class="tip__person">
+                <span>Tip Amount</span>
+                <span>/ person</span>
+              </div>
+              <span class="tip__result" id="amount">$4.27</span>
+            </div>
+            <div class="tip__amount-total">
+              <div class="tip__person">
+                <span>Total</span>
+                <span>/ person</span>
+              </div>
+              <span class="tip__result" id="total">$32.79</span>
+            </div>
+            <button class="tip__reset" id="reset">RESET</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
